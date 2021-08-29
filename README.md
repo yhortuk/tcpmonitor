@@ -1,5 +1,5 @@
 # Run
 
-composer install 
+composer install  
 php -S localhost:8000 public/index.php
 
