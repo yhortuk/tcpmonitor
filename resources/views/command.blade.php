@@ -47,7 +47,7 @@
     <script>
         function sendCommands() {
             document.getElementById("results").innerHTML = '';
-            document.getElementById("commands").textContent.split("\n").forEach(function (command) {
+            document.getElementById("commands").value.split("\n").forEach(function (command) {
                 let req = new XMLHttpRequest();
                 req.open('POST', '{{ route('api.send') }}', false);
                 req.setRequestHeader('Content-Type', 'application/json');
